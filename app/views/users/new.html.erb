@@ -1,0 +1,17 @@
+<h1>User</h1>
+<%= form_for(users_new_path) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %> <br>
+    <%= f.label :password %>
+    <%= f.text_field :password %> <br>
+    <%= f.label :nausea %>
+    <%= f.range_field :nausea %> <br>
+    <%= f.label :happiness %>
+    <%= f.range_field :happiness %> <br>
+    <%= f.label :tickets %>
+    <%= f.range_field :tickets %> <br>
+    <%= f.label :height %>
+    <%= f.range_field :height %> <br>
+    <br>
+    <%= f.submit %>
+<% end %>
