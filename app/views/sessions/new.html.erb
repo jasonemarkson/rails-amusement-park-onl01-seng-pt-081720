@@ -1,0 +1,8 @@
+This is the signin page
+<%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
+    <%=select_tag "user[name]", options_from_collection_for_select(User.all, "id", "name") %>
+    <br>
+    <p><label>Your Password:</label></p>
+    <%=password_field_tag 'password'%><br>
+    <%= submit_tag(value="Sign In") %>
+<% end %>
